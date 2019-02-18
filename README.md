@@ -1,1 +1,2 @@
-# golang_study
+# golang　学习，坚持为本
+学习打开第一天
