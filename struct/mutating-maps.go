@@ -10,7 +10,7 @@ func main() {
 
 	m["Answer"] =48
 	fmt.Println("The value:", m["Answer"])
-	
+
 	delete(m, "Answer")
 	fmt.Println("The value:", m["Answer"])
 
