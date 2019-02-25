@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b6392199-4f21-47cb-8a1a-abfaf7964cd6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/struct/exercise-slices.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/struct/range-contined.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/struct/range.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/struct/map-literals-continued.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/struct/map.literals.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/struct/maps.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/struct/mutating-maps.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/github.com/Go-zh/net" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/Go-zh/net" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/github.com/Go-zh/net/html/entity.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/Go-zh/net/html/entity.go" afterDir="false" />
@@ -773,7 +774,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/struct/range-contined.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
@@ -791,6 +792,42 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/struct/maps.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/struct/map.literals.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/struct/map-literals-continued.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/struct/mutating-maps.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="12" column="4" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -802,6 +839,7 @@
   </component>
   <component name="GOROOT" path="$USER_HOME$/go" />
   <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -812,10 +850,14 @@
         <option value="$PROJECT_DIR$/struct/range.go" />
         <option value="$PROJECT_DIR$/struct/range-contined.go" />
         <option value="$PROJECT_DIR$/struct/exercise-slices.go" />
+        <option value="$PROJECT_DIR$/struct/maps.go" />
+        <option value="$PROJECT_DIR$/struct/map.literals.go" />
+        <option value="$PROJECT_DIR$/struct/map-literals-continued.go" />
+        <option value="$PROJECT_DIR$/struct/mutating-maps.go" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="67" />
     <option name="y" value="49" />
     <option name="width" value="480" />
@@ -871,15 +913,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build exercise-slices.go">
-    <configuration name="go build append.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="go" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/struct/append.go" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Go Build.go build mutating-maps.go">
     <configuration name="go build exercise-slices.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -888,45 +922,54 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build range-contined.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build map-literals-continued.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/struct/range-contined.go" />
+      <filePath value="$PROJECT_DIR$/struct/map-literals-continued.go" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build range.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build map.literals.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/struct/range.go" />
+      <filePath value="$PROJECT_DIR$/struct/map.literals.go" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build slices-of-slices.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build maps.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/struct/slices-of-slices.go" />
+      <filePath value="$PROJECT_DIR$/struct/maps.go" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build mutating-maps.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="go" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/struct/mutating-maps.go" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build mutating-maps.go" />
+        <item itemvalue="Go Build.go build map-literals-continued.go" />
+        <item itemvalue="Go Build.go build map.literals.go" />
+        <item itemvalue="Go Build.go build maps.go" />
         <item itemvalue="Go Build.go build exercise-slices.go" />
-        <item itemvalue="Go Build.go build range-contined.go" />
-        <item itemvalue="Go Build.go build range.go" />
-        <item itemvalue="Go Build.go build append.go" />
-        <item itemvalue="Go Build.go build slices-of-slices.go" />
       </list>
     </recent_temporary>
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1299" height="743" extended-state="6" />
+    <frame x="67" y="49" width="480" height="636" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.9512987" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.9305556" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -935,7 +978,7 @@
       <window_info anchor="bottom" id="Event Log" sideWeight="0.5016234" side_tool="true" weight="0.3992095" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49837664" visible="true" weight="0.32952693" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49837664" visible="true" weight="0.3992095" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -981,6 +1024,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/struct/range-contined.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/struct/exercise-slices.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -988,10 +1038,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/struct/range-contined.go">
+    <entry file="file://$PROJECT_DIR$/struct/maps.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/struct/map.literals.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/struct/map-literals-continued.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/struct/mutating-maps.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="12" column="4" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
         </state>
       </provider>
     </entry>
