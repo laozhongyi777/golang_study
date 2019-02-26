@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b6392199-4f21-47cb-8a1a-abfaf7964cd6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/struct/exercise-maps.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/struct/function-closure.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/struct/function-values.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/methods/indirection.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/methods/methods-continued.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/methods/methods-funcs.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/methods/methods-pointers-explained.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/methods/methods-pointers.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/methods/methods.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/github.com/Go-zh/net" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/Go-zh/net" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/github.com/Go-zh/net/html/entity.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/Go-zh/net/html/entity.go" afterDir="false" />
@@ -755,7 +758,6 @@
       <change beforePath="$PROJECT_DIR$/src/github.com/golang/tools/third_party/webcomponents/customelements.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/golang.org/x/tools" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/tools" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/golang.org/x/tools/godoc/corpus.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/golang.org/x/tools/godoc/corpus.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/struct/mutating-maps.go" beforeDir="false" afterPath="$PROJECT_DIR$/struct/mutating-maps.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -763,25 +765,16 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="go" />
+  </component>
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/struct/exercise-maps.go">
+        <entry file="file://$PROJECT_DIR$/methods/methods-pointers-explained.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-              <folding>
-                <element signature="e#14#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/struct/function-values.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="225">
+              <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
               <folding>
                 <element signature="e#14#26#0" expanded="true" />
               </folding>
@@ -790,13 +783,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/struct/function-closure.go">
+        <entry file="file://$PROJECT_DIR$/methods/indirection.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-              <folding>
-                <element signature="e#14#55#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="39">
+              <caret line="21" column="14" lean-forward="true" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -830,6 +820,13 @@
         <option value="$PROJECT_DIR$/struct/exercise-maps.go" />
         <option value="$PROJECT_DIR$/struct/function-values.go" />
         <option value="$PROJECT_DIR$/struct/function-closure.go" />
+        <option value="$PROJECT_DIR$/struct/exercise-fibonacci-closure.go" />
+        <option value="$PROJECT_DIR$/methods/methods.go" />
+        <option value="$PROJECT_DIR$/methods/methods-funcs.go" />
+        <option value="$PROJECT_DIR$/methods/methods-continued.go" />
+        <option value="$PROJECT_DIR$/methods/methods-pointers.go" />
+        <option value="$PROJECT_DIR$/methods/methods-pointers-explained.go" />
+        <option value="$PROJECT_DIR$/methods/indirection.go" />
       </list>
     </option>
   </component>
@@ -858,7 +855,7 @@
             <path>
               <item name="go" type="b2602c69:ProjectViewProjectNode" />
               <item name="go" type="462c0819:PsiDirectoryNode" />
-              <item name="struct" type="462c0819:PsiDirectoryNode" />
+              <item name="methods" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -889,54 +886,54 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build exercise-fibonacci-closure.go">
-    <configuration name="go build exercise-fibonacci-closure.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Build.go build indirection.go">
+    <configuration name="go build indirection.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/struct/exercise-fibonacci-closure.go" />
+      <filePath value="$PROJECT_DIR$/methods/indirection.go" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build exercise-maps.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build methods-continued.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/struct/exercise-maps.go" />
+      <filePath value="$PROJECT_DIR$/methods/methods-continued.go" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build function-closure.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build methods-funcs.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/struct/function-closure.go" />
+      <filePath value="$PROJECT_DIR$/methods/methods-funcs.go" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build function-values.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build methods-pointers-explained.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/struct/function-values.go" />
+      <filePath value="$PROJECT_DIR$/methods/methods-pointers-explained.go" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build mutating-maps.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build methods-pointers.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/struct/mutating-maps.go" />
+      <filePath value="$PROJECT_DIR$/methods/methods-pointers.go" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build exercise-fibonacci-closure.go" />
-        <item itemvalue="Go Build.go build function-closure.go" />
-        <item itemvalue="Go Build.go build function-values.go" />
-        <item itemvalue="Go Build.go build exercise-maps.go" />
-        <item itemvalue="Go Build.go build mutating-maps.go" />
+        <item itemvalue="Go Build.go build indirection.go" />
+        <item itemvalue="Go Build.go build methods-pointers-explained.go" />
+        <item itemvalue="Go Build.go build methods-pointers.go" />
+        <item itemvalue="Go Build.go build methods-continued.go" />
+        <item itemvalue="Go Build.go build methods-funcs.go" />
       </list>
     </recent_temporary>
   </component>
@@ -944,7 +941,7 @@
     <frame x="67" y="49" width="480" height="636" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Favorites" side_tool="true" weight="0.3287037" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.9305556" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
@@ -1062,6 +1059,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/struct/exercise-fibonacci-closure.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/struct/function-closure.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1069,6 +1073,63 @@
           <folding>
             <element signature="e#14#55#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/methods/methods.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+          <folding>
+            <element signature="e#14#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/methods/methods-continued.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#14#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/methods/methods-pointers.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+          <folding>
+            <element signature="e#14#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/methods/methods-funcs.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+          <folding>
+            <element signature="e#14#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/methods/methods-pointers-explained.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+          <folding>
+            <element signature="e#14#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/methods/indirection.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="21" column="14" lean-forward="true" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
         </state>
       </provider>
     </entry>
