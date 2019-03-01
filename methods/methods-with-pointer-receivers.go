@@ -1,10 +1,8 @@
 package main
 
-package main
-
 import (
-"fmt"
-"math"
+	"fmt"
+	"math"
 )
 
 type Vertex struct {
@@ -26,4 +24,3 @@ func main() {
 	v.Scale(5)
 	fmt.Printf("After scaling: %+v, Abs: %v\n", v, v.Abs())
 }
-
